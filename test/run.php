@@ -12,3 +12,8 @@ var_dump($r->say(1));
 
 $m = new Test\ClassMethod;
 $m->call();
+
+$call = new Test\Call;
+$call->test();
+
+Test\Test::check();
