@@ -20,6 +20,8 @@ $call->test();
 echo 'Test'.PHP_EOL;
 Test\Test::check();
 
+Test\Test::replace();
+
 echo 'TestLikely'.PHP_EOL;
 Test\Testlikely::say(0);
 
