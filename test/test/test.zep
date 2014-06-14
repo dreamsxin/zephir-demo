@@ -17,10 +17,33 @@ class Test
 			":num": "[0-9]+",
 			":all": ".*"
 		];
-		var searches, replaces, str;
-		let str = "mystringwith:anyinside",
-		searches = array_keys(patterns),
+		var replaces, str;
+		var searches = [];
+		let str = "mystringwith:anyinside";
+		let searches = array_keys(patterns),
 		replaces = array_values(patterns);
 		echo str_replace(searches, replaces, str);
+	}
+
+	public static function param(str)
+	{
+		echo trim(str);
+	}
+
+	public static function div(float a)
+	{
+		return 1/a;
+	}
+
+	public static function testBool()
+	{
+		var ret;
+		let ret = strpos("something","asome");
+		var_dump(ret);
+		if (ret === 0) {
+			echo "invalid comparison";
+		} else {
+			echo "succesfull comparison";
+		}
 	}
 }
