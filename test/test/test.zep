@@ -46,4 +46,12 @@ class Test
 			echo "succesfull comparison";
 		}
 	}
+
+	public static function testArray()
+	{
+		var elements;
+		let elements = ["abc": 1, ABDAY_1: DAY_1, ABDAY_2: DAY_2];
+
+		var_dump(elements);	
+	}
 }
